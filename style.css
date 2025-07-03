@@ -1,43 +1,67 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
-  background: #111;
+  padding: 0;
+  background-color: #000;
   color: #fff;
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  text-align: center;
+  height: 100vh;
 }
+
 .container {
-  max-width: 600px;
+  text-align: center;
+  padding: 20px;
 }
+
 .logo {
-  width: 100px;
+  max-width: 200px;
   margin-bottom: 20px;
 }
-.lang-switch {
+
+.lang-switcher {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-.lang-switch a {
-  color: #fff;
-  margin-left: 10px;
+
+.lang-switcher a {
+  margin: 0 5px;
   text-decoration: none;
+  font-size: 20px;
 }
-.buttons a {
-  display: inline-block;
-  margin: 20px 10px;
-  padding: 10px 20px;
-  border-radius: 8px;
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 30px;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.primary {
+  background-color: #fff;
+  color: #000;
+}
+
+.secondary {
+  background-color: #e1306c;
   color: #fff;
-}
-.book {
-  background: #1a1aff;
-}
-.insta {
-  background: #d6249f;
 }
