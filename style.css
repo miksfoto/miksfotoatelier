@@ -1,0 +1,43 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.container {
+  max-width: 600px;
+}
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.lang-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.lang-switch a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.buttons a {
+  display: inline-block;
+  margin: 20px 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+}
+.book {
+  background: #1a1aff;
+}
+.insta {
+  background: #d6249f;
+}
