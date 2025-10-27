@@ -1,31 +1,176 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MIKS FOTOATELIÉR</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MIKS FOTOATELIÉR | Fotoateliér Olomouc – pronájem studia, focení</title>
+  <meta name="description" content="Profesionální fotoateliér v centru Olomouce. Foto sál, 3 vánoční fot zóny, barevná pozadí (červené, černé, bílé), rezervační systém, pravidla a kontakty." />
+  <meta property="og:title" content="MIKS FOTOATELIÉR – fotoateliér v Olomouci" />
+  <meta property="og:description" content="Foto sál, 3 vánoční fot zóny, barevná pozadí (červené, černé, bílé). Férový ceník, online rezervace Reenio. Horní náměstí 27, Olomouc." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://miksfotoatelier.cz" />
+  <meta property="og:image" content="https://miksfotoatelier.cz/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth }
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08); }
+  </style>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <img src="logo.png" alt="Logo" class="logo">
-      <div class="lang-switcher">
-        <a href="#">🇨🇿</a>
-        <a href="#">🇺🇦</a>
-        <a href="#">🇬🇧</a>
+<body class="bg-zinc-950 text-zinc-100 antialiased">
+  <header class="sticky top-0 z-40 glass">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#hero" class="font-semibold tracking-wide">MIKS FOTOATELIÉR</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#cenik" class="hover:text-white/90">Ceník</a>
+        <a href="#popisky" class="hover:text-white/90">Popisky k pronájmu</a>
+        <a href="#vop" class="hover:text-white/90">VOP</a>
+        <a href="#galerie" class="hover:text-white/90">Galerie</a>
+        <a href="#kontakt" class="hover:text-white/90">Kontakt</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://miks-fotoatelier.reenio.cz/cs/" class="px-4 py-2 rounded-2xl bg-white/10 hover:bg-white/15 text-sm">Rezervovat</a>
+        <a href="https://instagram.com/miks.fotoatelier" class="px-4 py-2 rounded-2xl bg-white/10 hover:bg-white/15 text-sm">Instagram</a>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <h1>MIKS FOTOATELIÉR</h1>
-      <p>Profesionální fotoateliér v Olomouci. Pronájem dvou sálů pro focení nebo konferenci.</p>
-      <div class="buttons">
-        <a href="https://miks-fotoatelier.reenio.cz/" class="btn primary" target="_blank">Rezervovat</a>
-        <a href="https://instagram.com/miks.fotoatelier" class="btn secondary" target="_blank">Instagram</a>
+  <section id="hero" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 pt-16 pb-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Profesionální fotoateliér v Olomouci</h1>
+        <p class="mt-4 text-zinc-300">Foto sál s 3 vánočními fot zónami a barevnými pozadími – červeným, černým a bílým. Ideální pro portrét, produkt a vánoční focení. 100% online rezervace.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a class="px-5 py-3 rounded-2xl bg-white text-zinc-900 font-medium" href="https://miks-fotoatelier.reenio.cz/cs/">Rezervovat termín</a>
+          <a class="px-5 py-3 rounded-2xl bg-white/10" href="#cenik">Zobrazit ceník</a>
+        </div>
+        <p class="mt-4 text-xs text-zinc-400">Adresa: Horní náměstí 27, Olomouc • Tel: +420 777 444 278 • E‑mail: miksfotoatelier@gmail.com</p>
       </div>
-    </main>
-  </div>
+      <div class="aspect-video rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-700 overflow-hidden border border-white/10">
+        <div class="w-full h-full grid place-items-center text-center p-8">
+          <div>
+            <div class="text-7xl">📸</div>
+            <p class="mt-2 text-zinc-300">Vaše studio v centru města</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cenik" class="py-16 bg-zinc-900/50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">Ceník</h2>
+      <p class="mt-2 text-zinc-300">Minimum rezervace: <strong>1 hod</strong>.</p>
+      <div class="mt-6 grid md:grid-cols-1 gap-6">
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-white/10">
+          <h3 class="text-xl font-semibold">Foto sál</h3>
+          <p class="mt-2 text-3xl font-bold">600 Kč / hod</p>
+          <ul class="mt-4 space-y-2 text-zinc-300 text-sm">
+            <li>• Záblesky + trvalá světla (dle dostupnosti)</li>
+            <li>• 3 vánoční fot zóny</li>
+            <li>• Barevná pozadí: červené, černé, bílé</li>
+            <li>• Přístup 15 min předem na přípravu</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-6">
+        <a class="px-5 py-3 rounded-2xl bg-white text-zinc-900 font-medium" href="https://miks-fotoatelier.reenio.cz/cs/">Rezervovat</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="popisky" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">Popisky k pronájmu</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6 text-zinc-300">
+        <div class="p-6 rounded-2xl bg-zinc-900/40 border border-white/5">
+          <h3 class="font-semibold">Jak probíhá pronájem</h3>
+          <ol class="list-decimal pl-5 mt-2 space-y-1 text-sm">
+            <li>Zvolte termín v systému Reenio.</li>
+            <li>Po potvrzení obdržíte instrukce k přístupu.</li>
+            <li>Platba na místě / převodem dle dohody.</li>
+          </ol>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900/40 border border-white/5">
+          <h3 class="font-semibold">Pravidla studia (zkráceně)</h3>
+          <ul class="list-disc pl-5 mt-2 space-y-1 text-sm">
+            <li>Vstup bez bot na pozadí; rekvizity vracejte na místo.</li>
+            <li>Respektujte čas rezervace (včetně přípravy/úklidu).</li>
+            <li>Poškození vybavení hradí nájemce.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-4 text-sm text-zinc-400">Detailní pravidla níže ve VOP.</p>
+    </div>
+  </section>
+
+  <section id="vop" class="py-16 bg-zinc-900/50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">Všeobecné obchodní podmínky (VOP)</h2>
+      <p class="mt-3 text-zinc-300 text-sm">Tento zkrácený přehled slouží pro rychlou orientaci. Plné znění lze dát do PDF ke stažení.</p>
+      <div class="mt-4 grid md:grid-cols-3 gap-6 text-sm">
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-white/10">
+          <h3 class="font-semibold">Rezervace & zrušení</h3>
+          <p class="mt-2 text-zinc-300">Zrušení do 24 h předem zdarma, poté storno 50 % z ceny rezervace. No‑show 100 %.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-white/10">
+          <h3 class="font-semibold">Provoz & odpovědnost</h3>
+          <p class="mt-2 text-zinc-300">Nájemce odpovídá za škody způsobené v průběhu pronájmu. Studio může vyžádat kauci.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-white/10">
+          <h3 class="font-semibold">Fakturace</h3>
+          <p class="mt-2 text-zinc-300">Provozovatel: Rubusidauta s.r.o. (neplátce DPH). Platby převodem / kartou dle dohody.</p>
+        </div>
+      </div>
+      <div class="mt-4">
+        <a href="/VOP_MIKS_FOTOATELIER.pdf" class="underline text-sm opacity-80" target="_blank" rel="noopener">Stáhnout plné znění VOP (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="galerie" class="py-16">
+    <div class="max-w-6xl mx_auto px-4">
+      <h2 class="text-3xl font-bold">Galerie</h2>
+      <p class="mt-2 text-zinc-300">Ukázky prací přidáme – zatím sledujte Instagram.</p>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="aspect-square rounded-xl bg-zinc-800"></div>
+        <div class="aspect-square rounded-xl bg-zinc-800"></div>
+        <div class="aspect-square rounded-xl bg-zinc-800"></div>
+        <div class="aspect-square rounded-xl bg-zinc-800"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="py-16 bg-zinc-900/50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">Kontakt</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-white/10 text-zinc-300 text-sm space-y-1">
+          <p><strong>Adresa:</strong> Horní náměstí 27, 779 00 Olomouc</p>
+          <p><strong>Telefon:</strong> +420 777 444 278</p>
+          <p><strong>E‑mail:</strong> miksfotoatelier@gmail.com</p>
+          <div class="mt-3 flex gap-3">
+            <a class="px-4 py-2 rounded-2xl bg-white/10" href="https://miks-fotoatelier.reenio.cz/cs/">Rezervovat</a>
+            <a class="px-4 py-2 rounded-2xl bg-white/10" href="https://instagram.com/miks.fotoatelier">Instagram</a>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-white/10">
+          <iframe title="Mapa" width="100%" height="320" style="border:0" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Horn%C3%AD%20n%C3%A1m%C4%9Bst%C3%AD%2027%2C%20Olomouc&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-zinc-400">
+    <p>© <span id="y"></span> MIKS FOTOATELIÉR • Provozovatel: Rubusidauta s.r.o.</p>
+    <p class="mt-1">IČO doplníme • <a class="underline" href="#vop">VOP</a> • <a class="underline" href="#popisky">Pravidla</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
