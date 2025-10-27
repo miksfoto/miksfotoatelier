@@ -1,6 +1,5 @@
 {
-    { "source": "/(.*)"
-, "destination": "https://miksfotoatelier.cz/$1", "permanent": true }
+    { 
   ],
   "headers": [
     {
