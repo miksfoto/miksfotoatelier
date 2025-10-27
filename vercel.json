@@ -1,6 +1,7 @@
 {
   "redirects": [
-    { "source": "https://www.miksfotoatelier.cz/(.*)", "destination": "https://miksfotoatelier.cz/$1", "permanent": true }
+    { "source": "/(.*)"
+, "destination": "https://miksfotoatelier.cz/$1", "permanent": true }
   ],
   "headers": [
     {
